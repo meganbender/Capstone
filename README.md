@@ -11,3 +11,8 @@ This documentation includes links and screenshots from the initial development p
 - Swift
 - SwiftUI / UIkit
 - Firebase ??
+
+## Figma Design File
+Honestly, this is kinda sad, I mean it is pretty decent for my first attempt.... but I could do better...
+
+link here -> https://www.figma.com/design/G8UzmspnZsCpsew9LsKWNI/MCDC_VisGuide_Prototype_v1?node-id=0-1&t=EbaUbFSwoJ8lSjKj-1 
