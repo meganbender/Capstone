@@ -9,7 +9,7 @@ This documentation includes links and screenshots from the initial development p
 ## Teck Stack:
 - Xcode
 - Swift
-- SwiftUI / UIkit
+- UIkit
 - Firebase ??
 
 ## Figma Design File
