@@ -12,6 +12,9 @@ This documentation includes links and screenshots from the initial development p
 - UIkit
 - Firebase ??
 
+### Libraries Used:
+- SF Symbols 6 (Apple Developer site in design resources)
+  
 ## Figma Design File
 Honestly, this is kinda sad, I mean it is pretty decent for my first attempt.... but I could do better...
 
