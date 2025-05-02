@@ -10,9 +10,13 @@
 		E87093DB2DC17518007489DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87093DA2DC17518007489DD /* AppDelegate.swift */; };
 		E87093DD2DC17518007489DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87093DC2DC17518007489DD /* SceneDelegate.swift */; };
 		E87093DF2DC17518007489DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87093DE2DC17518007489DD /* ViewController.swift */; };
-		E87093E22DC17518007489DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E87093E02DC17518007489DD /* Main.storyboard */; };
 		E87093E42DC1751B007489DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E87093E32DC1751B007489DD /* Assets.xcassets */; };
-		E87093E72DC1751B007489DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E87093E52DC1751B007489DD /* LaunchScreen.storyboard */; };
+		E87093FA2DC27A0A007489DD /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87093F92DC27A0A007489DD /* WelcomeViewController.swift */; };
+		E87093FC2DC2B956007489DD /* WelcomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87093FB2DC2B956007489DD /* WelcomePage.swift */; };
+		E87093FF2DC2C538007489DD /* Jura-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E87093FE2DC2C538007489DD /* Jura-VariableFont_wght.ttf */; };
+		E87094012DC2C542007489DD /* Quicksand-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E87094002DC2C542007489DD /* Quicksand-VariableFont_wght.ttf */; };
+		E87094032DC50F3B007489DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E87094022DC50F3B007489DD /* LaunchScreen.storyboard */; };
+		E87094052DC521B2007489DD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87094042DC521B1007489DD /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +24,14 @@
 		E87093DA2DC17518007489DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E87093DC2DC17518007489DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E87093DE2DC17518007489DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E87093E12DC17518007489DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E87093E32DC1751B007489DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E87093E62DC1751B007489DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E87093E82DC1751B007489DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E87093F92DC27A0A007489DD /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		E87093FB2DC2B956007489DD /* WelcomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePage.swift; sourceTree = "<group>"; };
+		E87093FE2DC2C538007489DD /* Jura-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jura-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		E87094002DC2C542007489DD /* Quicksand-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		E87094022DC50F3B007489DD /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E87094042DC521B1007489DD /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +48,7 @@
 		E87093CE2DC17518007489DD = {
 			isa = PBXGroup;
 			children = (
+				E87094042DC521B1007489DD /* Extensions.swift */,
 				E87093D92DC17518007489DD /* MCDCGuide */,
 				E87093D82DC17518007489DD /* Products */,
 			);
@@ -56,15 +65,50 @@
 		E87093D92DC17518007489DD /* MCDCGuide */ = {
 			isa = PBXGroup;
 			children = (
+				E87093FD2DC2C4A0007489DD /* Fonts */,
+				E87093F22DC1C2BF007489DD /* Model */,
+				E87093F42DC1C2E7007489DD /* View */,
+				E87093F62DC1C339007489DD /* Controller */,
 				E87093DA2DC17518007489DD /* AppDelegate.swift */,
 				E87093DC2DC17518007489DD /* SceneDelegate.swift */,
-				E87093DE2DC17518007489DD /* ViewController.swift */,
-				E87093E02DC17518007489DD /* Main.storyboard */,
 				E87093E32DC1751B007489DD /* Assets.xcassets */,
-				E87093E52DC1751B007489DD /* LaunchScreen.storyboard */,
 				E87093E82DC1751B007489DD /* Info.plist */,
 			);
 			path = MCDCGuide;
+			sourceTree = "<group>";
+		};
+		E87093F22DC1C2BF007489DD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E87093F42DC1C2E7007489DD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E87094022DC50F3B007489DD /* LaunchScreen.storyboard */,
+				E87093FB2DC2B956007489DD /* WelcomePage.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E87093F62DC1C339007489DD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E87093DE2DC17518007489DD /* ViewController.swift */,
+				E87093F92DC27A0A007489DD /* WelcomeViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E87093FD2DC2C4A0007489DD /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E87093FE2DC2C538007489DD /* Jura-VariableFont_wght.ttf */,
+				E87094002DC2C542007489DD /* Quicksand-VariableFont_wght.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +169,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E87093E72DC1751B007489DD /* LaunchScreen.storyboard in Resources */,
 				E87093E42DC1751B007489DD /* Assets.xcassets in Resources */,
-				E87093E22DC17518007489DD /* Main.storyboard in Resources */,
+				E87094032DC50F3B007489DD /* LaunchScreen.storyboard in Resources */,
+				E87094012DC2C542007489DD /* Quicksand-VariableFont_wght.ttf in Resources */,
+				E87093FF2DC2C538007489DD /* Jura-VariableFont_wght.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,32 +183,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E87093FC2DC2B956007489DD /* WelcomePage.swift in Sources */,
+				E87094052DC521B2007489DD /* Extensions.swift in Sources */,
 				E87093DF2DC17518007489DD /* ViewController.swift in Sources */,
+				E87093FA2DC27A0A007489DD /* WelcomeViewController.swift in Sources */,
 				E87093DB2DC17518007489DD /* AppDelegate.swift in Sources */,
 				E87093DD2DC17518007489DD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		E87093E02DC17518007489DD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E87093E12DC17518007489DD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E87093E52DC1751B007489DD /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E87093E62DC1751B007489DD /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E87093E92DC1751B007489DD /* Debug */ = {
@@ -294,10 +323,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MCDCGuide/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MCDC;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -323,10 +353,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MCDCGuide/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MCDC;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
