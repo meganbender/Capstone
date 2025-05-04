@@ -23,6 +23,8 @@ extension Color {
     // creating my custom colors to be used everywhere else
     static let mcdcPurple = Color(hex: 0x8b358c)
     static let mcdcPurple_light = Color(hex: 0x8b358c, opacity: 0.75)
+    static let mcdcPurple_bg = Color(hex: 0x8b358c, opacity: 0.30)
+    static let mcdcDarkPurple = Color(hex: 0x6e3079)
     static let mcdcBlue = Color(hex: 0x002756)
     static let mcdcGreen = Color(hex: 0x88a03a)
     static let mcdcOrange = Color(hex: 0xe88a1c)
