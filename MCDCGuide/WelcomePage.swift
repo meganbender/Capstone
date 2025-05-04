@@ -4,10 +4,27 @@
 //
 //  Created by Megan Bender on 4/30/25.
 //
+// use this to find the font names
+//  init(){
+//        for familyName in UIFont.familyNames {
+//         print(familyName)
+//            for fontname in UIFont.fontNames(forFamilyName: familyName){
+//                print("--\(fontname)")
+//            }
+//
+//        }
+//   }
+//
+//
 
 import SwiftUI
 
 struct WelcomePage: View {
+    //@State var showPopup: Bool = false
+    //@State var gotoHomePage: Bool = false
+    // the remote control to help us view see and change the value appState which is of type AppState
+    @EnvironmentObject var appStateManager: AppStateManager
+    
     var body: some View {
         VStack{
             Spacer()
@@ -31,37 +48,29 @@ struct WelcomePage: View {
                 .font(.custom("Quicksand-Medium", size: 20))
                 .multilineTextAlignment(.center)
                 .foregroundStyle(Color.mcdcPurple_light)
-                .kerning(2)
+                .kerning(2.5)
             
             Spacer()
             
-            Button(" DISCOVER NOW ") {
+            Button(action: {
                 // PLACE ACTION HERE (go to home page (or trigger popup)
-            }
-            .multilineTextAlignment(.center)
-            .clipShape(RoundedRectangle(cornerRadius: 20))
-            .buttonStyle(.borderedProminent)
-            .tint(.mcdcPurple)
-            .font(.custom("Quicksand-SemiBold", size:24))
-            .kerning(4)
+                //showPopup.toggle()
+                appStateManager.currentState = .popup
+            }, label: {
+                Text(" DISCOVER NOW ")
+                    .padding(10)
+                    .foregroundStyle(Color.white)
+                    .background(Color.mcdcPurple.cornerRadius(20))
+                    .font(.custom("Quicksand-SemiBold", size: 24))
+                    .kerning(4)
+            })
             
             Spacer()
         }
     }
-    
-    /* use this to find the font names
-    init(){
-        for familyName in UIFont.familyNames {
-            print(familyName)
-            for fontname in UIFont.fontNames(forFamilyName: familyName){
-                print("--\(fontname)")
-            }
-                    
-        }
-    }
-     */
 }
 
 #Preview {
     WelcomePage()
+        .environmentObject(AppStateManager())
 }
