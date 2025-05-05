@@ -90,7 +90,7 @@ struct HomeScreen: View {
                                     .resizable()
                                     .scaledToFill()
                                     .frame(width: 200, height: 200)
-                                    .containerRelativeFrame(.horizontal, count: verticalSizeClass == .regular ? 1 : 4, spacing: 0)
+                                    .containerRelativeFrame(.horizontal, count: verticalSizeClass == .regular ? 1 : 2, spacing: 0)
                                     .scrollTransition {content, phase in
                                         content
                                             .opacity(phase.isIdentity ? 1.0 : 0.25)
@@ -268,6 +268,7 @@ struct HomeScreen: View {
                     }
                 }
                 .padding(.top, -20)
+                Spacer(minLength: 40)
             }
             
         }

@@ -7,13 +7,14 @@
 
 import SwiftUI
 
-struct PopupPage: View {
+struct PopupScreen: View {
 //    @Environment(\.dismiss) var dismiss
 //    // these are basically my passed in params
 //    @Binding var gotoHomePage: Bool
 //    @Binding var showPopup: Bool
-    @EnvironmentObject var appStateManager: AppStateManager
+    //@EnvironmentObject var appStateManager: AppStateManager
     @State private var dragOffset: CGSize = .zero
+    var onDismiss: () -> Void
     
     var body: some View {
         ZStack {
@@ -83,7 +84,8 @@ struct PopupPage: View {
                     if value.translation.height < -200 {
                         // user drug the screen up high enough so we can go to the home page
                         withAnimation(.spring) {
-                            appStateManager.currentState = .home
+                            //appStateManager.currentState = .home
+                            onDismiss()
                         }
                     } else { // was not far enough bounce back
                         withAnimation(.bouncy) {
@@ -118,6 +120,7 @@ struct PopupPage: View {
 }
 
 #Preview {
-    PopupPage()
-        .environmentObject(AppStateManager())
+    PopupScreen {
+        
+    }
 }
