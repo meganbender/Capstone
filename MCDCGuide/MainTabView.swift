@@ -23,16 +23,16 @@ struct MainTabView: View {
     
     var body: some View {
         TabView {
-            MapsScreen()
+            HomeScreen()
                 .tabItem {
-                    Image(systemName: "map")
+                    Image(systemName: "house")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 50, height: 50)
                 }
-            HomeScreen()
+            MapsScreen()
                 .tabItem {
-                    Image(systemName: "house")
+                    Image(systemName: "map")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 50, height: 50)
