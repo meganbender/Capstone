@@ -15,22 +15,37 @@
 
 import SwiftUI
 
+enum AppStage {
+    case welcome, popup, main
+}
+
 struct RootView: View {
-    @StateObject private var appStateManager = AppStateManager()
+    //@StateObject private var appStateManager = AppStateManager()
+//    @State private var showWelcome = true
+//    @State private var showPopup = false
+    @State private var stage: AppStage = .welcome
     
     var body: some View {
-        ZStack{
-            switch appStateManager.currentState {
+        Group {
+            switch stage {
             case .welcome:
-                WelcomePage()
+                WelcomeScreen {
+                    withAnimation {
+                        stage = .popup
+                    }
+                }
+                
             case .popup:
-                PopupPage()
-            case .home:
-                HomeScreen()
+                PopupScreen {
+                    withAnimation {
+                        stage = .main
+                    }
+                }
+                
+            case .main:
+                MainTabView()
             }
         }
-        .environmentObject(appStateManager)
-        .animation(.easeInOut, value: appStateManager.currentState)
     }
 }
 

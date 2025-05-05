@@ -19,11 +19,12 @@
 
 import SwiftUI
 
-struct WelcomePage: View {
+struct WelcomeScreen: View {
     //@State var showPopup: Bool = false
     //@State var gotoHomePage: Bool = false
     // the remote control to help us view see and change the value appState which is of type AppState
     @EnvironmentObject var appStateManager: AppStateManager
+    var onContinue: () -> Void
     
     var body: some View {
         VStack{
@@ -55,7 +56,7 @@ struct WelcomePage: View {
             Button(action: {
                 // PLACE ACTION HERE (go to home page (or trigger popup)
                 //showPopup.toggle()
-                appStateManager.currentState = .popup
+                onContinue()
             }, label: {
                 Text(" DISCOVER NOW ")
                     .padding(10)
@@ -71,6 +72,7 @@ struct WelcomePage: View {
 }
 
 #Preview {
-    WelcomePage()
-        .environmentObject(AppStateManager())
+    WelcomeScreen {
+        
+    }
 }
