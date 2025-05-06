@@ -1,5 +1,5 @@
 //
-//  WelcomeScreen.swift
+//  WelcomePage.swift
 //  MCDCGuide
 //
 //  Created by Megan Bender on 4/30/25.
@@ -20,6 +20,8 @@
 import SwiftUI
 
 struct WelcomeScreen: View {
+    //@State var showPopup: Bool = false
+    //@State var gotoHomePage: Bool = false
     // the remote control to help us view see and change the value appState which is of type AppState
     @EnvironmentObject var appStateManager: AppStateManager
     var onContinue: () -> Void

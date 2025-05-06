@@ -28,4 +28,5 @@ extension Color {
     static let mcdcBlue = Color(hex: 0x002756)
     static let mcdcGreen = Color(hex: 0x88a03a)
     static let mcdcOrange = Color(hex: 0xe88a1c)
+    static let mcdcTeal = Color(hex: 0x00a89d)
 }
