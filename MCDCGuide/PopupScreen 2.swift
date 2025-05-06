@@ -1,5 +1,5 @@
 //
-//  PopupScreen.swift
+//  PopupPage.swift
 //  MCDCGuide
 //
 //  Created by Megan Bender on 5/2/25.
@@ -66,16 +66,10 @@ struct PopupScreen: View {
                         .font(.custom("Quicksand-Regular", size: 20))
                         .multilineTextAlignment(.center)
                     
-                    //Spacer()
+                    Spacer()
                     
-                    Image(systemName: "chevron.up")
-                        .resizable()
-                        .foregroundColor(.white)
-                        .frame(width: 30, height: 18)
-                        .padding(.top, 20)
+                    Image(systemName: "chevron.up").foregroundColor(.white)
                 }
-                .padding(.leading, 20)
-                .padding(.trailing, 20)
             }
         }
         .offset(y: dragOffset.height)
@@ -99,7 +93,29 @@ struct PopupScreen: View {
                         }
                     }
                 }
+            
+//            
+//                .updating($dragTranslation) { value, state, _ in
+//                    if value.translation.height < 0 {
+//                        // only doing upward drags
+//                        
+//                    }
+//                }
+//                .onEnded{ value in
+//                    // this if is basically if the user drags the popup screen far enough it will spring up and move to home page, else it will bounce back
+//                    if value.translation.height < -150 {
+//                        withAnimation(.spring){
+//                            dismiss()
+//                        }
+//                    } else {
+//                        withAnimation(.bouncy){
+//                            dragOffset = 0
+//                        }
+//                    }
+//                    
+//                }
         )
+        //.animation(.spring(), value: dragOffset + dragTranslation)
     }
 }
 
