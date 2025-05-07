@@ -30,3 +30,15 @@ extension Color {
     static let mcdcOrange = Color(hex: 0xe88a1c)
     static let mcdcTeal = Color(hex: 0x00a89d)
 }
+
+// this extension helps the user dismiss the keyboard when they are on the chat screen
+// you will jsut call it on the outside of you VStack or ZStack or whatever you are using by calling .hideKeyboard()
+extension View {
+    func hideKeyboardOnswip() -> some View {
+        self.gesture(
+            DragGesture().onChanged { _ in
+                UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+            }
+        )
+    }
+}
