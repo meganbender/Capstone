@@ -61,6 +61,7 @@ struct ChatScreen: View {
                     .padding()
                 }
             }
+            .hideKeyboardOnswip()
         }
     }
 }
