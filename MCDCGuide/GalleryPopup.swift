@@ -47,7 +47,8 @@ struct GalleryPopup: View {
                 Spacer()
             }
             .padding(10)
-            .background(gallery.color.opacity(0.1))
+            .background(gallery.color.opacity(0.1).ignoresSafeArea())
+            
         }
     }
         
