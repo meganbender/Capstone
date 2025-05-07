@@ -17,6 +17,8 @@
 		E808128A2DC8793C00C42BB9 /* Level3Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80812892DC8793C00C42BB9 /* Level3Screen.swift */; };
 		E808128C2DC9CC7E00C42BB9 /* ItemDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E808128B2DC9CC7E00C42BB9 /* ItemDefinitions.swift */; };
 		E808128E2DCA46C400C42BB9 /* MapData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E808128D2DCA46C400C42BB9 /* MapData.swift */; };
+		E80812942DCA8FEA00C42BB9 /* GalleriesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80812932DCA8FEA00C42BB9 /* GalleriesData.swift */; };
+		E80812962DCAC31F00C42BB9 /* GalleryPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80812952DCAC31F00C42BB9 /* GalleryPopup.swift */; };
 		E87093DB2DC17518007489DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87093DA2DC17518007489DD /* AppDelegate.swift */; };
 		E87093DD2DC17518007489DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87093DC2DC17518007489DD /* SceneDelegate.swift */; };
 		E87093DF2DC17518007489DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87093DE2DC17518007489DD /* ViewController.swift */; };
@@ -44,6 +46,8 @@
 		E80812892DC8793C00C42BB9 /* Level3Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level3Screen.swift; sourceTree = "<group>"; };
 		E808128B2DC9CC7E00C42BB9 /* ItemDefinitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDefinitions.swift; sourceTree = "<group>"; };
 		E808128D2DCA46C400C42BB9 /* MapData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapData.swift; sourceTree = "<group>"; };
+		E80812932DCA8FEA00C42BB9 /* GalleriesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleriesData.swift; sourceTree = "<group>"; };
+		E80812952DCAC31F00C42BB9 /* GalleryPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryPopup.swift; sourceTree = "<group>"; };
 		E87093D72DC17518007489DD /* MCDCGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCDCGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E87093DA2DC17518007489DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E87093DC2DC17518007489DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +84,7 @@
 				E808127D2DC83B8400C42BB9 /* MapsScreen.swift */,
 				E80812822DC878D000C42BB9 /* DetailedMapScreens */,
 				E808127B2DC83B7300C42BB9 /* GalleriesScreen.swift */,
+				E80812952DCAC31F00C42BB9 /* GalleryPopup.swift */,
 				E80812792DC83B5C00C42BB9 /* ChatScreen.swift */,
 			);
 			name = MainTabviewScreens;
@@ -154,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				E808128D2DCA46C400C42BB9 /* MapData.swift */,
+				E80812932DCA8FEA00C42BB9 /* GalleriesData.swift */,
 				E87093DE2DC17518007489DD /* ViewController.swift */,
 				E87093F92DC27A0A007489DD /* WelcomeViewController.swift */,
 			);
@@ -250,7 +256,9 @@
 				E80812862DC8791900C42BB9 /* Level1Screen.swift in Sources */,
 				E8E599D22DC58529007F16A0 /* RootView.swift in Sources */,
 				E808128A2DC8793C00C42BB9 /* Level3Screen.swift in Sources */,
+				E80812962DCAC31F00C42BB9 /* GalleryPopup.swift in Sources */,
 				E87093FA2DC27A0A007489DD /* WelcomeViewController.swift in Sources */,
+				E80812942DCA8FEA00C42BB9 /* GalleriesData.swift in Sources */,
 				E87093DB2DC17518007489DD /* AppDelegate.swift in Sources */,
 				E808128E2DCA46C400C42BB9 /* MapData.swift in Sources */,
 				E808127C2DC83B7300C42BB9 /* GalleriesScreen.swift in Sources */,

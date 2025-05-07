@@ -2,14 +2,11 @@
 //  Level3Screen.swift
 //  MCDCGuide
 //
-//  Created by Megan Bender on 5/4/25.
-//
 
 import SwiftUI
 
 struct Level3Screen: View {
     @State private var titleWidth: CGFloat = 0
-    @StateObject private var mapController = MapDataController()
     
     var body: some View {
         GeometryReader { geometry in

@@ -2,8 +2,6 @@
 //  ViewController.swift
 //  MCDCGuide
 //
-//  Created by Megan Bender on 4/29/25.
-//
 
 import UIKit
 

@@ -2,8 +2,6 @@
 //  AppStateManager.swift
 //  MCDCGuide
 //
-//  Created by Megan Bender on 5/2/25.
-//
 
 import SwiftUI
 

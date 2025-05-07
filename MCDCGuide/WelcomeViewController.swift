@@ -2,8 +2,6 @@
 //  WelcomeViewController.swift
 //  MCDCGuide
 //
-//  Created by Megan Bender on 4/30/25.
-//
 
 import UIKit
 
