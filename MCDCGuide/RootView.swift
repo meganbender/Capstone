@@ -2,8 +2,6 @@
 //  RootView.swift
 //  MCDCGuide
 //
-//  Created by Megan Bender on 5/2/25.
-//
 //  So what is this for??
 //      Well it allows us to create a custome drag action for our first
 //      3 pages. I want an upwards drag but unfourtantly the fullscreencover

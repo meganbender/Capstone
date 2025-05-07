@@ -2,8 +2,6 @@
 //  PopupScreen.swift
 //  MCDCGuide
 //
-//  Created by Megan Bender on 5/2/25.
-//
 
 import SwiftUI
 
@@ -28,7 +26,7 @@ struct PopupScreen: View {
                     .resizable()
                     .frame(width: 220, height: 230)
                     .position(x: geometry.size.width * 0.09,
-                              y: geometry.size.height * 0.15)
+                              y: geometry.size.height * 0.1)
                     //.offset(x: -158, y: -280)
                 
                 VStack {
@@ -68,11 +66,10 @@ struct PopupScreen: View {
                     
                     //Spacer()
                     
-                    Image(systemName: "chevron.up")
-                        .resizable()
-                        .foregroundColor(.white)
-                        .frame(width: 30, height: 18)
-                        .padding(.top, 20)
+                    Capsule()
+                        .fill(Color.white.opacity(0.8))
+                        .frame(width: 40, height: 6)
+                        .padding(.top, 10)
                 }
                 .padding(.leading, 20)
                 .padding(.trailing, 20)

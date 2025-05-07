@@ -2,8 +2,6 @@
 //  WelcomeScreen.swift
 //  MCDCGuide
 //
-//  Created by Megan Bender on 4/30/25.
-//
 // use this to find the font names
 //  init(){
 //        for familyName in UIFont.familyNames {

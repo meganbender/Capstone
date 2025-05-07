@@ -2,8 +2,6 @@
 //  HomeScreen.swift
 //  MCDCGuide
 //
-//  Created by Megan Bender on 5/2/25.
-//
 
 import SwiftUI
 
@@ -73,7 +71,7 @@ struct HomeScreen: View {
                         .frame(width: geometry.size.width, alignment: .leading)
                         .offset(x: geometry.size.width * 0.06)
                         .padding(.top, 40)
-                    // the following is making the custome underline for the header of a section
+                    // the following is making the custom underline for the header of a section
                     Path { path in
                         path.move(to: CGPoint(x: geometry.size.width * 0.06, y: 0))
                         path.addLine(to: CGPoint(x: 265, y: 0))

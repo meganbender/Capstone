@@ -2,14 +2,15 @@
 //  LowerLevelScreen.swift
 //  MCDCGuide
 //
-//  Created by Megan Bender on 5/4/25.
-//
 
 import SwiftUI
 
 struct LowerLevelScreen: View {
     @State private var titleWidth: CGFloat = 0
     @StateObject private var mapController = MapDataController()
+    @StateObject private var galleryController = GalleryDataController()
+    @State private var selectedGallery: GalleryItem? = nil
+    @State private var showPopup = false
     
     var body: some View {
         GeometryReader { geometry in
@@ -42,7 +43,12 @@ struct LowerLevelScreen: View {
                         
                     ForEach(mapController.llPins) { pin in
                         Button(action: {
-                            // here will be the action for the pin
+                            // here will be the action for the pin; but we need to find the matching gallery item so the following is a function that will help us with that by using an expression
+                            if let matchingGallery = galleryController.LLGalleries.first(where: { $0.label == pin.galleryLabel }) {
+                                selectedGallery = matchingGallery
+                                showPopup = true
+                            }
+                            
                         }) {
                             Image(systemName: "atom")
                                 .resizable()
@@ -74,6 +80,15 @@ struct LowerLevelScreen: View {
                 .padding(.top, 50)
                 .padding(.leading, 10)
                 .padding(.trailing, 10)
+            }
+            .sheet(isPresented: $showPopup) {
+                if let gallery = selectedGallery {
+                    GalleryPopup(gallery: gallery)
+                        .presentationDragIndicator(.visible)
+                        .presentationDetents([.medium, .large])
+                        .presentationCornerRadius(20)
+                    
+                }
             }
         }
     }

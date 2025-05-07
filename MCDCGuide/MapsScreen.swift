@@ -2,8 +2,6 @@
 //  MapsScreen.swift
 //  MCDCGuide
 //
-//  Created by Megan Bender on 5/4/25.
-//
 
 import SwiftUI
 
