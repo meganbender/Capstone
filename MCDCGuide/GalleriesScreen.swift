@@ -66,15 +66,15 @@ struct GalleriesScreen: View {
                         }
                         .padding(.leading, 20)
                     }
-                    .sheet(isPresented: $showPopup) {
-                        if let gallery = selectedGallery {
-                            GalleryPopup(gallery: gallery)
-                                .presentationDragIndicator(.visible)
-                                .presentationDetents([.medium, .large])
-                                .presentationCornerRadius(20)
-                            
-                        }
-                    }
+//                    .sheet(isPresented: $showPopup) {
+//                        if let gallery = selectedGallery {
+//                            GalleryPopup(gallery: gallery)
+//                                .presentationDragIndicator(.visible)
+//                                .presentationDetents([.medium, .large])
+//                                .presentationCornerRadius(20)
+//                            
+//                        }
+//                    }
                 }
                 .padding(.top, 50)
                 
@@ -115,15 +115,15 @@ struct GalleriesScreen: View {
                         }
                         .padding(.leading, 20)
                     }
-                    .sheet(isPresented: $showPopup) {
-                        if let gallery = selectedGallery {
-                            GalleryPopup(gallery: gallery)
-                                .presentationDragIndicator(.visible)
-                                .presentationDetents([.medium, .large])
-                                .presentationCornerRadius(40)
-                            
-                        }
-                    }
+//                    .sheet(isPresented: $showPopup) {
+//                        if let gallery = selectedGallery {
+//                            GalleryPopup(gallery: gallery)
+//                                .presentationDragIndicator(.visible)
+//                                .presentationDetents([.medium, .large])
+//                                .presentationCornerRadius(40)
+//                            
+//                        }
+//                    }
                 }
                 .padding(.top, 25)
                 
@@ -164,18 +164,24 @@ struct GalleriesScreen: View {
                         }
                         .padding(.leading, 20)
                     }
-                    .sheet(isPresented: $showPopup) {
-                        if let gallery = selectedGallery {
-                            GalleryPopup(gallery: gallery)
-                                .presentationDragIndicator(.visible)
-                                .presentationDetents([.medium, .large])
-                                .presentationCornerRadius(20)
-                            
-                        }
-                    }
+//                    .sheet(isPresented: $showPopup) {
+//                        if let gallery = selectedGallery {
+//                            GalleryPopup(gallery: gallery)
+//                                .presentationDragIndicator(.visible)
+//                                .presentationDetents([.medium, .large])
+//                                .presentationCornerRadius(20)
+//                            
+//                        }
+//                    }
                 }
                 .padding(.top, 25)
                 Spacer()
+            }// the .sheet had to be fixed the original was causing an error in which the first item would load up even as nil but now this forces and item to be passed through so we dont cause that error
+            .sheet(item: $selectedGallery) { gallery in
+                GalleryPopup(gallery: gallery)
+                    .presentationDragIndicator(.visible)
+                    .presentationDetents([.medium, .large])
+                    .presentationCornerRadius(20)
             }
         }
     }

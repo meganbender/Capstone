@@ -78,15 +78,12 @@ struct Level2Screen: View {
                 .padding(.top, 50)
                 .padding(.leading, 10)
                 .padding(.trailing, 10)
-            }
-            .sheet(isPresented: $showPopup) {
-                if let gallery = selectedGallery {
-                    GalleryPopup(gallery: gallery)
-                        .presentationDragIndicator(.visible)
-                        .presentationDetents([.medium, .large])
-                        .presentationCornerRadius(20)
-                    
-                }
+            }// the .sheet had to be fixed the original was causing an error in which the first item would load up even as nil but now this forces and item to be passed through so we dont cause that error
+            .sheet(item: $selectedGallery) { gallery in
+                GalleryPopup(gallery: gallery)
+                    .presentationDragIndicator(.visible)
+                    .presentationDetents([.medium, .large])
+                    .presentationCornerRadius(20)
             }
         }
     }
