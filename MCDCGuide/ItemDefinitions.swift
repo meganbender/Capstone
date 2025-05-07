@@ -5,6 +5,11 @@
 
 import SwiftUI
 
+
+//Difference between let and var
+//  let is when you want a varibale to be unchaged, so this item is immutable, a constant
+//  var means the variable is mutable and can be changed
+
 struct Pin: Identifiable {
     let id = UUID()
     let xPercent: CGFloat
@@ -31,3 +36,12 @@ struct GalleryItem: Identifiable {
     let funFact: String
     let color: Color
 }
+
+// adopted from Jared Davidson (video: How to use chatgpt in swift)
+struct Message: Identifiable {
+    var id: UUID = .init()
+    var content: String
+    var isUser: Bool
+}
+
+

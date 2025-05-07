@@ -19,6 +19,8 @@
 		E808128E2DCA46C400C42BB9 /* MapData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E808128D2DCA46C400C42BB9 /* MapData.swift */; };
 		E80812942DCA8FEA00C42BB9 /* GalleriesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80812932DCA8FEA00C42BB9 /* GalleriesData.swift */; };
 		E80812962DCAC31F00C42BB9 /* GalleryPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80812952DCAC31F00C42BB9 /* GalleryPopup.swift */; };
+		E80812982DCB042100C42BB9 /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80812972DCB042100C42BB9 /* ChatController.swift */; };
+		E808129A2DCB05A600C42BB9 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80812992DCB05A600C42BB9 /* MessageView.swift */; };
 		E87093DB2DC17518007489DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87093DA2DC17518007489DD /* AppDelegate.swift */; };
 		E87093DD2DC17518007489DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87093DC2DC17518007489DD /* SceneDelegate.swift */; };
 		E87093DF2DC17518007489DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87093DE2DC17518007489DD /* ViewController.swift */; };
@@ -31,6 +33,8 @@
 		E87094052DC521B2007489DD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87094042DC521B1007489DD /* Extensions.swift */; };
 		E87094092DC55471007489DD /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87094082DC55471007489DD /* HomeScreen.swift */; };
 		E870940B2DC55776007489DD /* PopupScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E870940A2DC55776007489DD /* PopupScreen.swift */; };
+		E88CCFFB2DCB32770064AF3E /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = E88CCFFA2DCB32770064AF3E /* OpenAI */; };
+		E88CCFFD2DCB4BC80064AF3E /* SecretItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88CCFFC2DCB4BC80064AF3E /* SecretItems.swift */; };
 		E8E599D22DC58529007F16A0 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E599D12DC58529007F16A0 /* RootView.swift */; };
 		E8E599D42DC58AC6007F16A0 /* AppStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E599D32DC58AC6007F16A0 /* AppStateManager.swift */; };
 /* End PBXBuildFile section */
@@ -48,6 +52,8 @@
 		E808128D2DCA46C400C42BB9 /* MapData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapData.swift; sourceTree = "<group>"; };
 		E80812932DCA8FEA00C42BB9 /* GalleriesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleriesData.swift; sourceTree = "<group>"; };
 		E80812952DCAC31F00C42BB9 /* GalleryPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryPopup.swift; sourceTree = "<group>"; };
+		E80812972DCB042100C42BB9 /* ChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
+		E80812992DCB05A600C42BB9 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		E87093D72DC17518007489DD /* MCDCGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCDCGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E87093DA2DC17518007489DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E87093DC2DC17518007489DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +68,8 @@
 		E87094042DC521B1007489DD /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		E87094082DC55471007489DD /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		E870940A2DC55776007489DD /* PopupScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupScreen.swift; sourceTree = "<group>"; };
+		E88CCFFC2DCB4BC80064AF3E /* SecretItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretItems.swift; sourceTree = "<group>"; };
+		E88CCFFE2DCBD0FA0064AF3E /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		E8E599D12DC58529007F16A0 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		E8E599D32DC58AC6007F16A0 /* AppStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E88CCFFB2DCB32770064AF3E /* OpenAI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +95,7 @@
 				E808127B2DC83B7300C42BB9 /* GalleriesScreen.swift */,
 				E80812952DCAC31F00C42BB9 /* GalleryPopup.swift */,
 				E80812792DC83B5C00C42BB9 /* ChatScreen.swift */,
+				E80812992DCB05A600C42BB9 /* MessageView.swift */,
 			);
 			name = MainTabviewScreens;
 			sourceTree = "<group>";
@@ -101,12 +111,21 @@
 			name = DetailedMapScreens;
 			sourceTree = "<group>";
 		};
+		E808129E2DCB2F4F00C42BB9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E87093CE2DC17518007489DD = {
 			isa = PBXGroup;
 			children = (
+				E88CCFFE2DCBD0FA0064AF3E /* Config.xcconfig */,
 				E87094042DC521B1007489DD /* Extensions.swift */,
 				E87093D92DC17518007489DD /* MCDCGuide */,
 				E87093D82DC17518007489DD /* Products */,
+				E808129E2DCB2F4F00C42BB9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,6 +157,7 @@
 			children = (
 				E8E599D32DC58AC6007F16A0 /* AppStateManager.swift */,
 				E808128B2DC9CC7E00C42BB9 /* ItemDefinitions.swift */,
+				E88CCFFC2DCB4BC80064AF3E /* SecretItems.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -158,10 +178,11 @@
 		E87093F62DC1C339007489DD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E87093F92DC27A0A007489DD /* WelcomeViewController.swift */,
 				E808128D2DCA46C400C42BB9 /* MapData.swift */,
 				E80812932DCA8FEA00C42BB9 /* GalleriesData.swift */,
 				E87093DE2DC17518007489DD /* ViewController.swift */,
-				E87093F92DC27A0A007489DD /* WelcomeViewController.swift */,
+				E80812972DCB042100C42BB9 /* ChatController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -191,6 +212,9 @@
 			dependencies = (
 			);
 			name = MCDCGuide;
+			packageProductDependencies = (
+				E88CCFFA2DCB32770064AF3E /* OpenAI */,
+			);
 			productName = MCDCGuide;
 			productReference = E87093D72DC17518007489DD /* MCDCGuide.app */;
 			productType = "com.apple.product-type.application";
@@ -219,6 +243,9 @@
 				Base,
 			);
 			mainGroup = E87093CE2DC17518007489DD;
+			packageReferences = (
+				E88CCFF92DCB32770064AF3E /* XCRemoteSwiftPackageReference "OpenAI" */,
+			);
 			productRefGroup = E87093D82DC17518007489DD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -256,11 +283,14 @@
 				E80812862DC8791900C42BB9 /* Level1Screen.swift in Sources */,
 				E8E599D22DC58529007F16A0 /* RootView.swift in Sources */,
 				E808128A2DC8793C00C42BB9 /* Level3Screen.swift in Sources */,
+				E80812982DCB042100C42BB9 /* ChatController.swift in Sources */,
 				E80812962DCAC31F00C42BB9 /* GalleryPopup.swift in Sources */,
 				E87093FA2DC27A0A007489DD /* WelcomeViewController.swift in Sources */,
+				E808129A2DCB05A600C42BB9 /* MessageView.swift in Sources */,
 				E80812942DCA8FEA00C42BB9 /* GalleriesData.swift in Sources */,
 				E87093DB2DC17518007489DD /* AppDelegate.swift in Sources */,
 				E808128E2DCA46C400C42BB9 /* MapData.swift in Sources */,
+				E88CCFFD2DCB4BC80064AF3E /* SecretItems.swift in Sources */,
 				E808127C2DC83B7300C42BB9 /* GalleriesScreen.swift in Sources */,
 				E80812882DC8792E00C42BB9 /* Level2Screen.swift in Sources */,
 				E808127A2DC83B5C00C42BB9 /* ChatScreen.swift in Sources */,
@@ -277,6 +307,7 @@
 /* Begin XCBuildConfiguration section */
 		E87093E92DC1751B007489DD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E88CCFFE2DCBD0FA0064AF3E /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -476,6 +507,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E88CCFF92DCB32770064AF3E /* XCRemoteSwiftPackageReference "OpenAI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MacPaw/OpenAI.git";
+			requirement = {
+				kind = exactVersion;
+				version = 0.2.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E88CCFFA2DCB32770064AF3E /* OpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E88CCFF92DCB32770064AF3E /* XCRemoteSwiftPackageReference "OpenAI" */;
+			productName = OpenAI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E87093CF2DC17518007489DD /* Project object */;
 }
