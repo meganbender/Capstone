@@ -1,6 +1,6 @@
 # Capstone Project
 Visitors Guide for The Magic City Discovery Center (a local children's museum) an iOS application.
-Video Description: https://www.youtube.com/watch?v=YZmKtPvCQmQ&t=168s 
+#### Video Description: https://www.youtube.com/watch?v=YZmKtPvCQmQ&t=168s 
 
 ## Background:
 This capstone project was chosen to encompass the full lifecycle of mobile app development. I dedicated significant time to learning Ui/Ux development tools, including Figma, to create interactive prototypes and supportthe design process with well-documented, clearly commented amterials.
